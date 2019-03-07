@@ -22,7 +22,8 @@ var Items = mongoose.model('item', movieItemSchema);
 // 获取电影信息
 const getMovieList =  () => {
   return Items.find({}).exec();
-  // return Items.find({}).exec() 
+  // console.log(data);
+  // return data;
 }
 
 // let movieList=[

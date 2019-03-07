@@ -21,6 +21,7 @@ const init = () => {
     // 当路由匹配到/home的时候router-view中渲染hahah
     router.route('/home', appHomeController.render)
     router.route('/movie/publish', appMoviePublishController.render)
+    router.route('/movie/items', appMovieItemsController.render)
 
     // 默认路由 
     router.route('*', (req, res, next) => {
