@@ -183,4 +183,10 @@ let movieList =
     }
   ]
 
-export { movieList }
+const getMovieList = () => {
+  return movieList
+}
+
+module.exports = {
+  getMovieList
+}
