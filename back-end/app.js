@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var {
+  jsonFormat
+} = require('./middlewares')
+var {
   baseUrl
 } = require('./config')
 
@@ -21,6 +24,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// 使用jsonFormat中间件处理所有请求的数据响应格式为application/json
+app.use(baseUrl + '/', jsonFormat)
 
 app.use(baseUrl + '/', indexRouter);
 app.use(baseUrl + '/movie', movieRouter);
