@@ -1,191 +1,45 @@
-let movieList =  
-  [
-    {
-      "id": 341139,
-      "haspromotionTag": false,
-      "img": "http://p0.meituan.net/w.h/movie/034069fc367db8a7d9644717b416cc2c332883.jpg",
-      "version": "v3d imax",
-      "nm": "惊奇队长",
-      "preShow": false,
-      "sc": 0,
-      "globalReleased": false,
-      "wish": 426898,
-      "star": "布丽·拉尔森,塞缪尔·杰克逊,本·门德尔森",
-      "rt": "2019-03-08",
-      "showInfo": "今天156家影院放映237场",
-      "showst": 4,
-      "wishst": 0
-    }, {
-      "id": 1206605,
-      "haspromotionTag": false,
-      "img": "http://p1.meituan.net/w.h/movie/c9b280de01549fcb71913edec05880585769972.jpg",
-      "version": "",
-      "nm": "绿皮书",
-      "preShow": false,
-      "sc": 9.6,
-      "globalReleased": true,
-      "wish": 40834,
-      "star": "维果·莫腾森,马赫沙拉·阿里,琳达·卡德里尼",
-      "rt": "2019-03-01",
-      "showInfo": "今天217家影院放映2341场",
-      "showst": 3,
-      "wishst": 0
-    }, {
-      "id": 247295,
-      "haspromotionTag": false,
-      "img": "http://p0.meituan.net/w.h/movie/9ef02a501fee7f62d49d2096b52175d32155331.jpg",
-      "version": "v3d imax",
-      "nm": "驯龙高手3",
-      "preShow": false,
-      "sc": 9.1,
-      "globalReleased": true,
-      "wish": 199916,
-      "star": "杰伊·巴鲁切尔,刘昊然,亚美莉卡·费雷拉",
-      "rt": "2019-03-01",
-      "showInfo": "今天213家影院放映1956场",
-      "showst": 3,
-      "wishst": 0
-    }, {
-      "id": 1250341,
-      "haspromotionTag": false,
-      "img": "http://p0.meituan.net/w.h/movie/50dd0a416492c2c8086afb05f1d3216f137417.jpg",
-      "version": "",
-      "nm": "夏目友人帐",
-      "preShow": false,
-      "sc": 0,
-      "globalReleased": true,
-      "wish": 234032,
-      "star": "神谷浩史,井上和彦,小林沙苗",
-      "rt": "2019-03-07",
-      "showInfo": "今天209家影院放映1701场",
-      "showst": 3,
-      "wishst": 0
-    }, {
-      "id": 410629,
-      "haspromotionTag": false,
-      "img": "http://p0.meituan.net/w.h/movie/fc4dd6cd0c6f7db566a128cc05c475355664427.jpg",
-      "version": "v3d imax",
-      "nm": "阿丽塔：战斗天使",
-      "preShow": false,
-      "sc": 9,
-      "globalReleased": true,
-      "wish": 172381,
-      "star": "罗莎·萨拉查,克里斯托弗·沃尔兹,基恩·约翰逊",
-      "rt": "2019-02-22",
-      "showInfo": "今天213家影院放映1660场",
-      "showst": 3,
-      "wishst": 0
-    }, {
-      "id": 248906,
-      "haspromotionTag": false,
-      "img": "http://p1.meituan.net/w.h/movie/616cd50a33550a9225ac781e52d14ae54967551.jpg",
-      "version": "v3d imax",
-      "nm": "流浪地球",
-      "preShow": false,
-      "sc": 9.3,
-      "globalReleased": true,
-      "wish": 249514,
-      "star": "吴京,屈楚萧,李光洁",
-      "rt": "2019-02-05",
-      "showInfo": "今天203家影院放映989场",
-      "showst": 3,
-      "wishst": 0
-    }, {
-      "id": 1218091,
-      "haspromotionTag": false,
-      "img": "http://p0.meituan.net/w.h/movie/894fb3b5d73f48148a79b7d8ad234f5010214941.jpg",
-      "version": "v2d imax",
-      "nm": "飞驰人生",
-      "preShow": false,
-      "sc": 8.8,
-      "globalReleased": true,
-      "wish": 382360,
-      "star": "沈腾,黄景瑜,尹正",
-      "rt": "2019-02-05",
-      "showInfo": "今天106家影院放映224场",
-      "showst": 3,
-      "wishst": 0
-    }, {
-      "id": 907653,
-      "haspromotionTag": false,
-      "img": "http://p1.meituan.net/w.h/movie/37f4140453b836bce84dc0457a7315638613528.jpg",
-      "version": "",
-      "nm": "狂暴凶狮",
-      "preShow": false,
-      "sc": 0,
-      "globalReleased": false,
-      "wish": 11862,
-      "star": "索菲.范.德温,艾比·侯斯,朱利安.卢曼",
-      "rt": "2019-03-22",
-      "showInfo": "2019-03-22上映",
-      "showst": 4,
-      "wishst": 0
-    }, {
-      "id": 1225543,
-      "haspromotionTag": false,
-      "img": "http://p1.meituan.net/w.h/movie/80e116dd9a15e77499d024537fdc85fa1510643.jpg",
-      "version": "",
-      "nm": "魔神Z",
-      "preShow": false,
-      "sc": 0,
-      "globalReleased": false,
-      "wish": 4445,
-      "star": "森久保祥太郎,茅野爱衣,上坂堇",
-      "rt": "2019-03-08",
-      "showInfo": "2019-03-08 本周五上映",
-      "showst": 4,
-      "wishst": 0
-    }, {
-      "id": 1229799,
-      "haspromotionTag": false,
-      "img": "http://p0.meituan.net/w.h/movie/e4c80d98883095e1c0b5a5c43e525fba1655199.jpg",
-      "version": "",
-      "nm": "过春天",
-      "preShow": true,
-      "sc": 0,
-      "globalReleased": false,
-      "wish": 7288,
-      "star": "黄尧,孙阳,汤加文",
-      "rt": "2019-03-15",
-      "showInfo": "2019-03-15 下周五上映",
-      "showst": 4,
-      "wishst": 0
-    }, {
-      "id": 1212353,
-      "haspromotionTag": false,
-      "img": "http://p0.meituan.net/w.h/movie/92bc761cd952e2db40368b4e80159e422234295.jpg",
-      "version": "",
-      "nm": "阳台上",
-      "preShow": false,
-      "sc": 0,
-      "globalReleased": false,
-      "wish": 48790,
-      "star": "周冬雨,王锵,曹瑞",
-      "rt": "2019-03-15",
-      "showInfo": "2019-03-15 下周五上映",
-      "showst": 4,
-      "wishst": 0
-    }, {
-      "id": 1214652,
-      "haspromotionTag": false,
-      "img": "http://p0.meituan.net/w.h/movie/979266668d0e94dc83956a70d22b4eaa184105.jpg",
-      "version": "",
-      "nm": "朝花夕誓-于离别之朝束起约定之花",
-      "preShow": false,
-      "sc": 9.1,
-      "globalReleased": true,
-      "wish": 76220,
-      "star": "石见舞菜香,入野自由,茅野爱衣",
-      "rt": "2019-02-22",
-      "showInfo": "今天19家影院放映36场",
-      "showst": 3,
-      "wishst": 0
-    }
-  ]
 
-const getMovieList = () => {
-  return movieList
+const mongoose = require('mongoose')
+mongoose.connect('mongodb://localhost:27017/movies', { useNewUrlParser: true });
+
+// 电影item Schema （规定文档的格式）
+var movieItemSchema = new mongoose.Schema({
+  img: String,
+  title:   String,
+  star: String,
+  showTime: Number,
+  publishTime: Number,
+  description: String
+});
+// console.log("1");
+// 单数会自动加s （集合）
+var Items = mongoose.model('item', movieItemSchema);
+
+// Items.find({}).exec().then(res => {
+//   console.log(res);
+// })
+
+// 获取电影信息
+const getMovieList =  () => {
+  return Items.find({}).exec();
+  // return Items.find({}).exec() 
 }
+
+// let movieList=[
+//   {
+//     "id": 1,
+//     "img": "http://p0.meituan.net/w.h/movie/9ef02a501fee7f62d49d2096b52175d32155331.jpg",
+//     "title": "驯龙高手3",
+//     "star": "杰伊·巴鲁切尔,刘昊然,亚美莉卡·费雷拉",
+//     "showTime": "2019-03-01",
+//     "publishTime": "2019-02-28",
+//     "description":"哈哈哈啊啊啊啊啊啊"
+//   }
+// ]
+
+// const getMovieList = () => {
+//   return movieList
+// }
 
 module.exports = {
   getMovieList
