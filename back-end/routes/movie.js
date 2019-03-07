@@ -4,6 +4,6 @@ const movieController = require('../controllers/movie')
 
 
 //获取电影信息
-router.get('/list',movieController.getMovieList)
+router.get('/items',movieController.getMovieList)
 
 module.exports = router
