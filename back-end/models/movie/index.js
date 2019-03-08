@@ -38,10 +38,12 @@ const getMovieList =  () => {
 //   }
 // ]
 
-// const getMovieList = () => {
-//   return movieList
-// }
+// 发布新电影
+const postMovieItem =  (params) => {
+  return Items.insertMany(params)
+}
 
 module.exports = {
-  getMovieList
+  getMovieList,
+  postMovieItem
 }
