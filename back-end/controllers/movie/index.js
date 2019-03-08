@@ -25,6 +25,33 @@ const getMovieList = async (req,res,next) => {
   next("success")
 }
 
+
+// 发布新电影
+const postMovieItem = async (req, res, next) => {
+  // title, star, description, showTime
+  let { title, star, description, showTime } = req.body
+
+  if ( title && star && description && showTime ) {
+      try {
+          showTime = new Date(moment(showTime)).getTime()
+          let data = await movieModel.postMovieItem({
+              title, star, description, showTime,
+              publishTime: Date.now(),
+              img: ''
+          })
+          next('success')
+      } catch (e) {
+          next('error')
+      } 
+  } else {
+      next('miss param')
+  }
+
+  
+}
+
+
+
 module.exports = {
   getMovieList
 }
