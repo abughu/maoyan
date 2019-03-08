@@ -13,7 +13,7 @@ const jsonFormat = (req, res, next) => {
 // state 此次请求的状态
 const response = (state, req, res, next) => {
   res.render('default', {  
-      data: JSON.stringify(res.data || {}), 
+      data: JSON.stringify(res.responseData || {}), 
       status: status[state] 
   })
 }

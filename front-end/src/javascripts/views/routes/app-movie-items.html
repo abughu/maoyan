@@ -33,7 +33,7 @@
         <td>{{$value.title}}</td>
         <td>{{$value.star}}</td>
         <td>{{$value.description}}</td>
-        <td><span class="label label-success">已上映</span></td>
+        <td><span class="label label-{{$value.state === 'playing' ? 'success' : 'warning'}}">{{$value.state === 'playing' ? '已上映' : '即将上映'}}</span></td>
         <td>{{$value.showTime}}</td>
         <td>{{$value.publishTime}}</td>
       </tr>
