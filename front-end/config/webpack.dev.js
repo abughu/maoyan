@@ -15,9 +15,10 @@ module.exports = {
         port: 9000,
         // host: '',
         proxy: {
-            // '/lagou': {
-            //     target: ''
-            // }
+            '/api': {
+                target: 'http://localhost:3000',
+                changeOrigin:true
+            }
         }
     },
     plugins: [

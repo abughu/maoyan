@@ -26,17 +26,18 @@
         <th>上映时间</th>
         <th>发布时间</th>
       </tr>
+      {{each items}}
       <tr>
-        <td class="_id">1</td>
-        <td class="img"><img src="https://p0.meituan.net/128.180/movie/9ef02a501fee7f62d49d2096b52175d32155331.jpg" alt=""></td>
-        <td>驯龙高手</td>
-        <td>某某某</td>
-        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+        <td class="_id">{{ $index+1 }}</td>
+        <td class="img"><img src="{{$value.img}}" alt=""></td>
+        <td>{{$value.title}}</td>
+        <td>{{$value.star}}</td>
+        <td>{{$value.description}}</td>
         <td><span class="label label-success">已上映</span></td>
-        <td>2019-03-01</td>
-        <td>2019-02-18</td>
+        <td>{{$value.showTime}}</td>
+        <td>{{$value.publishTime}}</td>
       </tr>
-      
+      {{/each}}
     </table>
   </div>
   <!-- /.box-body -->
