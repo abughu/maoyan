@@ -1,5 +1,6 @@
 
 import appMoviePublish from '@views/routes/app-movie-publish.html'
+import { postMovieItem } from '@models/movie-model'
 
 const render = (req, res, next) => {
     res.render(appMoviePublish)

@@ -9,6 +9,19 @@ const getMovieItems = () => {
   })
 }
 
+// 发布电影信息
+const postMovieItem = (data) => {
+  return request({
+      url: '/api/v1/movie/item',
+      type: 'post',
+      data,
+      headers: {
+          'content-type': 'application/x-www-form-urlencoded'
+      }
+  })
+}
+
 export {
-  getMovieItems
+  getMovieItems,
+  postMovieItem
 }
