@@ -4,11 +4,12 @@ import {getMovieItems} from '@models/movie-model'
 
 const render = async (req, res, next) => {
     let data = await getMovieItems()
+    console.log(data);
     // console.log(data)
     // res.render(appMovieItems)
     res.render(
         template.compile(appMovieItems)({
-            items:data.data
+            items:data
         })
     )
 }
