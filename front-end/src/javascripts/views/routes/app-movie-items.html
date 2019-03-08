@@ -1,11 +1,54 @@
-<!-- <div class="box box-primary">
-    <div class="box-header with-border">
-      <h3 class="box-title">发布</h3>
-    </div>
-    <div class="box-body">
-      欢迎来到猫眼电影资讯管理系统，愉快的玩耍吧~
-    </div>
-</div> -->
 
+<div class="box movie-items">
+  <div class="box-header with-border">
+    <h3 class="box-title">电影资讯列表</h3>
 
-<div>items</div>
+    <div class="box-tools">
+      <div class="input-group input-group-sm" style="width: 150px;">
+        <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body table-responsive no-padding">
+    <table class="table table-hover table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>图片</th>
+        <th>标题</th>
+        <th>主演</th>
+        <th>描述</th>
+        <th>状态</th>
+        <th>上映时间</th>
+        <th>发布时间</th>
+      </tr>
+      <tr>
+        <td class="_id">1</td>
+        <td class="img"><img src="https://p0.meituan.net/128.180/movie/9ef02a501fee7f62d49d2096b52175d32155331.jpg" alt=""></td>
+        <td>驯龙高手</td>
+        <td>某某某</td>
+        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+        <td><span class="label label-success">已上映</span></td>
+        <td>2019-03-01</td>
+        <td>2019-02-18</td>
+      </tr>
+      
+    </table>
+  </div>
+  <!-- /.box-body -->
+  <!-- 分页器 -->
+  <div class="box-footer clearfix">
+    <ul class="pagination pagination-sm no-margin pull-right">
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+  </div>
+</div>
+<!-- /.box -->
