@@ -3,6 +3,7 @@ import SMERouter from 'sme-router'
 import angel from '@utils/angel'
 import appHomeController from '@controllers/home/app-home-controller'
 import appMoviePublishController from '@controllers/movie/app-movie-publish-controller'
+import appMovieItemsController from '@controllers/movie/app-movie-items-controller'
 
 
 // 路由初始化函数
